@@ -49,7 +49,7 @@ function CartPage() {
     };
 
     try {
-      const response = await fetch('/api/pharmacies/orders', {
+      const response = await fetch('https://asparianpharmacy-a7505c4f976a.herokuapp.com/api/pharmacies/orders', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(order)

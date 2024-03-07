@@ -6,7 +6,7 @@ export const usePharmacies = () => {
 
     useEffect(() => {
         const fetchPharmacies = async () => {
-            const response = await axios.get('/api/pharmacies');
+            const response = await axios.get('https://asparianpharmacy-a7505c4f976a.herokuapp.com/api/pharmacies');
             console.log(response.data);
             setPharmacies(response.data);
         };
