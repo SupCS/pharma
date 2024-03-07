@@ -1,0 +1,32 @@
+.productListWrapper {
+    width: 100%;
+}
+
+.productList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+  
+
+.sortButton {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.sortButton.active {
+    box-shadow: 0 0 8px #007bff;
+    border-color: #007bff;
+    transition: all 0.3s ease;
+}
+
+.sortButtonsContainer {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0 0 20px;    
+}
+  

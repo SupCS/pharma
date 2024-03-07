@@ -1,0 +1,117 @@
+.cartPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 84px);
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.cartPageBlock {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.cartForm {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
+}
+
+.cartForm input {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #000;
+}
+
+.cartForm input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.cartForm input:focus {
+    outline: none;
+    border-bottom: 2px solid #007bff;
+    box-shadow: 0 2px 3px -2px #007bff;
+    transition: all 0.3s ease;
+}
+
+.cartItems {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 400px;
+    padding-right: 10px;
+}
+
+.cartItem {
+    padding: 5px;
+    border: 1px solid #999;
+    max-height: 200px;
+    width: 300px;
+}
+
+.invalid {
+    border-bottom: 2px solid red;
+    box-shadow: 0 2px 5px -2px red;
+}
+  
+
+.submitButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 10px #007bff;
+}
+
+.submitButton:focus {
+    outline: none;
+    box-shadow: 0 0 12px #007bff;
+}
+
+.actionButtonsContainer {
+    margin: 10px 0 10px 0;
+}
+
+.actionButton {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+}
+
+.actionButton:hover {
+    box-shadow: 0 0 8px #007bff;
+    border-color: #007bff;
+}
+
+.cartItemImage {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+  }

@@ -1,0 +1,21 @@
+.navbar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+
+.cartIcon, .storeIcon {
+    max-width: 60px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.cartIcon:hover, .storeIcon:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 8px #007bff;
+    transform: scale(1.05);
+}

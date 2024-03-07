@@ -1,0 +1,62 @@
+.card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.2s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.card:hover {
+    transform: scale(1.05);
+}
+
+.cardImage {
+    width: 230px;
+    max-height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+  
+.cardTitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+  
+.cardDescription {
+    font-size: 14px;
+    color: #666;
+}
+  
+.cardPrice {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.actions {
+    margin: 10px 0 10px 0;
+    display: flex;
+    gap: 10px;
+}
+  
+.actionButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+  
+.icon {
+    width: 24px;
+    height: auto;
+}
+  
